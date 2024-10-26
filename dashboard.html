@@ -20,7 +20,7 @@
     </select>
 
     <h3>Select Artists to Include</h3>
-    <inpt type="text" id="artist-search" class="form-control" placeholder="Search artist...">
+    <input type="text" id="artist-search" class="form-control" placeholder="Search artist...">
     <div id="artist-results" class="list-group mt-2"></div>
 
     <button id="create-playlist-btn" class="btn btn-primary mt-4">Create Playlist</button>
@@ -42,7 +42,7 @@
         document.getElementById('user-email').textContent = data.email;
     }
 
-    fetchUserProfile(); d
+    fetchUserProfile();
 
     document.getElementById('artist-search').oninput = async function() {
         const query = this.value;
